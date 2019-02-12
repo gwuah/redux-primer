@@ -1,0 +1,19 @@
+{
+  "name": "raw-redux",
+  "version": "1.0.0",
+  "description": "learning redux",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel store/index.js -d dist && babel actions/index.js -d dist && babel actionTypes/index.js -d dist && babel reducers/index.js -d dist",
+    "start": "npm run build && node dist/store/index.js"
+  },
+  "author": "gwuah",
+  "license": "ISC",
+  "dependencies": {
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
